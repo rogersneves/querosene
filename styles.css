@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f5;
+}
+
+.header {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  z-index: 100;
+  width: 100%;
+  top: 0;
+}
+
+.header .logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #007bff;
+  min-width: 150px;
+}
+
+.search-input {
+  max-width: 400px;
+  margin: 0 20px;
+}
+
+.feed {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+.card {
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+  max-width: 1920px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.post-content {
+  margin: 20px 0;
+  width: 100%;
+  max-width: 1920px;
+}
+
+.post-content img,
+.post-content video {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.vote-buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.btn-success {
+  background-color: #28a745;
+  border-color: #28a745;
+  color: white;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+  border-color: #218838;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border-color: #dc3545;
+  color: white;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+  border-color: #bd2130;
+}
+
+.text-muted {
+  color: #6c757d !important;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .header .logo {
+    font-size: 1.2rem;
+  }
+  
+  .search-input {
+    max-width: 200px;
+    margin: 0 10px;
+  }
+  
+  .feed {
+    padding-top: 80px;
+  }
+  
+  .card {
+    margin-bottom: 20px;
+  }
+}
